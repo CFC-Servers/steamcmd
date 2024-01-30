@@ -3,7 +3,7 @@
 ############################################################
 FROM debian:bullseye-slim as build_stage
 
-LABEL maintainer="walentinlamonos@gmail.com"
+LABEL maintainer="brandon@brandonsturgeon.com"
 ARG PUID=1000
 
 ENV USER steam
