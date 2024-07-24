@@ -1,3 +1,5 @@
+name: Update, Build, and Push
+
 on:
   workflow_dispatch:
   schedule:
