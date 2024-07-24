@@ -1,4 +1,4 @@
-name: Update, Build, and Push
+name: Build, and Push
 
 on:
   workflow_dispatch:
@@ -26,6 +26,6 @@ jobs:
       - name: Push new build
         uses: ./.github/actions/build_and_push
         with:
-          tag: ${{ steps.latest_tag.outputs.tag_name }}
+          tag_name: ${{ steps.latest_tag.outputs.tag_name }}
           release: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
