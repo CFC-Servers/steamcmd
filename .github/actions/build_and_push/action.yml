@@ -78,6 +78,7 @@ runs:
         password: ${{ inputs.github_token }}
 
     - name: Tag and push slim images
+      shell: bash
       run: |
         docker push ghcr.io/cfc-servers/steamcmd --all-tags
         docker push ghcr.io/cfc-servers/steamcmd-slim --all-tags
