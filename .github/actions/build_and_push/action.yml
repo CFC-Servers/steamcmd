@@ -19,9 +19,9 @@ runs:
     - name: Build
       shell: bash
       run: |
-        cd $GITHUB_WORKSPACE/bullseye
+        cd $GITHUB_WORKSPACE/bookworm
         docker build \
-          --target=bullseye \
+          --target=bookworm \
           --tag ghcr.io/cfc-servers/steamcmd:${{ inputs.tag_name }} \
           --tag ghcr.io/cfc-servers/steamcmd:steam \
           .
