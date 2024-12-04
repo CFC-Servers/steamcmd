@@ -1,9 +1,8 @@
 #!/bin/bash
 
-export PATH=$PATH:/home/steam/steamcmd
 echo "Starting slim_script.sh"
 
-steamcmd \
+/home/steam/steamcmd/steamcmd.sh \
     +login anonymous \
     +app_info_update 1 \
     +app_info_request 4020 \
