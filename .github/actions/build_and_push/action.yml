@@ -47,7 +47,9 @@ runs:
           --show-clogs --show-blogs \
           --tag ghcr.io/cfc-servers/steamcmd-slim:$version \
           --tag ghcr.io/cfc-servers/steamcmd-slim:steam \
-          --exec '/home/steam/steamcmd/steamcmd.sh +login anonymous +app_info_update +app_info_print 4020 +logoff +quit'
+          --include-path /home/steam/Steam/config/config.vdf \
+          --include-path /home/steam/Steam/appcache/appinfo.vdf \
+          --exec-file $GITHUB_WORKSPACE/bookworm/slim_script.sh
 
     - name: Add latest tag
       shell: bash
