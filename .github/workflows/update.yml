@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # RaphaelIT7: Same issue with steamcmd being 32x and failing (See https://github.com/CFC-Servers/GLuaTest/pull/116)
 
     steps:
       - name: Checkout repository
